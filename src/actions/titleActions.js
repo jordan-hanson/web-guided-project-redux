@@ -6,7 +6,7 @@ export const toggleEditing = () => {
 }
 
 export const updateTitle = (newTitle) => {
-  return { type: 'UPDATE_TITLE', payload: newTitleText };
+  return { type: 'UPDATE_TITLE', payload: newTitle };
 }
 
 // With Redux, on the component side we'll wrap these in a dispatch function
