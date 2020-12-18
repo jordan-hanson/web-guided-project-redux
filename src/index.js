@@ -8,7 +8,6 @@ import './styles.css';
 import { titleReducer } from './reducers/titleReducer';
 import {Provider} from "react-redux";
 
-
 // Step 1: create the Redux store
 const store = createStore(titleReducer);
 
@@ -21,6 +20,7 @@ function App() {
   );
 }
 
+// Step 2: Provide the Redux store to all components
 const rootElement = document.getElementById('root');
 ReactDOM.render(
   <Provider store={store}>
