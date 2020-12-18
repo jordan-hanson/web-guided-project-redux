@@ -37,4 +37,12 @@ class DragonList extends React.Component {
   }
 }
 
+const mapStateToProps = (state) => {
+  return {
+    members: state.dragonList.members
+  }
+}
+
+const mapDispatchToProps = {addMember}
+
 export default DragonList;
