@@ -11,9 +11,9 @@ const Title = (props) => {
 
   return (
     <div>
-      {!state.editing ? (
+      {!props.editing ? (
         <h1 onClick={() => props.toggleEditing()}>
-          {state.title}{' '}
+          {props.title}{' '}
           <i
             className="far fa-edit"
           />
