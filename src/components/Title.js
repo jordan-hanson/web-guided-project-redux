@@ -54,7 +54,10 @@ const mapStateToProps = (state) => {
 
 // This is how we update state in the store (with reducer actions)
 const mapDispatchToProps = (dispatch) => {
-
+  return {
+    updateTitle: (newTitle) => dispatch(updateTitle(newTitle)),
+    toggleEditing: () => dispatches(toggleEditing())
+  }
 }
 
 export default Title;
