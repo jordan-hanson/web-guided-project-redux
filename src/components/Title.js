@@ -1,6 +1,7 @@
 import React, { useState, useReducer } from 'react';
 
 import { initialState, titleReducer } from '../reducers/titleReducer';
+import {updateTitle, toggleEditing} from "../actions/titleActions";
 
 const Title = () => {
   const [newTitleText, setNewTitleText] = useState();
