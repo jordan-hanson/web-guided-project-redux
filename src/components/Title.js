@@ -16,10 +16,12 @@ const Title = () => {
       {!state.editing ? (
         <h1>
           {state.title}{' '}
-          <i
-            className="far fa-edit"
-            onClick={() => dispatch(toggleEditing())}
-          />
+          <div onClick={() => dispatch(toggleEditing())}>
+            <p>Edit title</p>
+            <i
+              className="far fa-edit"
+            />
+          </div>
         </h1>
       ) : (
         <div>
