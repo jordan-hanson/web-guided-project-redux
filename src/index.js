@@ -6,6 +6,7 @@ import Title from './components/Title';
 import DragonList from './components/DragonList';
 import './styles.css';
 import { titleReducer } from './reducers/titleReducer';
+import {Provider} from "react-redux";
 
 
 // Step 1: create the Redux store
