@@ -45,8 +45,8 @@ const Title = (props) => {
 // This is how we read state values from the store
 const mapStateToProps = (state) => {
   return {
-    editing: state.editing,
-    title: state.title
+    editing: state.title.editing,
+    title: state.title.title
   }
 }
 
