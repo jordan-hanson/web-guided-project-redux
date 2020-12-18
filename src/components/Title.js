@@ -31,7 +31,7 @@ const Title = () => {
           />
           <button
             onClick={() =>
-              dispatch(updateTitle(newTitleText))
+              props.updateTitle(newTitleText)
             }
           >
             Update title
@@ -53,7 +53,7 @@ const mapStateToProps = (state) => {
 }
 
 // This is how we update state in the store (with reducer actions)
-const mapDispatchToProps = () => {
+const mapDispatchToProps = (dispatch) => {
 
 }
 
