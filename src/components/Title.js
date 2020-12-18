@@ -18,7 +18,7 @@ const Title = () => {
           {state.title}{' '}
           <i
             className="far fa-edit"
-            onClick={() => dispatch({ type: 'TOGGLE_EDITING' })}
+            onClick={() => dispatch(toggleEditing())}
           />
         </h1>
       ) : (
