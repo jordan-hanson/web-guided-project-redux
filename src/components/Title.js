@@ -46,7 +46,10 @@ const Title = () => {
 
 // This is how we read state values from the store
 const mapStateToProps = (state) => {
-
+  return {
+    editing: state.editing,
+    title: state.title
+  }
 }
 
 // This is how we update state in the store (with reducer actions)
