@@ -1,5 +1,5 @@
 export const initialState = {
-    title: "Dragon Member List 🐲",
+    title: "WEBPT22 Dragon Club 🐲",
     editing: false
   };
   
