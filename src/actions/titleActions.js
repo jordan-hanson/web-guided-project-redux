@@ -6,5 +6,5 @@ export const toggleEditing = () => {
 }
 
 export const updateTitle = (newTitle) => {
-  return { type: 'UPDATE_TITLE', payload: newTitleText }
+  return { type: 'UPDATE_TITLE', payload: newTitleText };
 }
