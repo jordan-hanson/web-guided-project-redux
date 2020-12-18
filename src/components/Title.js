@@ -56,8 +56,8 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     updateTitle: (newTitle) => dispatch(updateTitle(newTitle)),
-    toggleEditing: () => dispatches(toggleEditing())
+    toggleEditing: () => dispatch(toggleEditing())
   }
 }
 
-export default Title;
+export default connect(mapStateToProps, mapDispatchToProps)(Title);
