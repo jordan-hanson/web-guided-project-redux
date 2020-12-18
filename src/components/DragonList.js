@@ -1,4 +1,5 @@
 import React from 'react';
+import {addMember} from "../actions/dragonListActions";
 
 class DragonList extends React.Component {
   state = {
