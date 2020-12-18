@@ -44,12 +44,14 @@ const Title = () => {
 
 // Step 3: connect the component to the Redux store
 
-const mapStateToProps = () => {
+// This is how we read state values from the store
+const mapStateToProps = (state) => {
 
 }
 
+// This is how we update state in the store (with reducer actions)
 const mapDispatchToProps = () => {
-  
+
 }
 
 export default Title;
