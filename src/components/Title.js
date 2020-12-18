@@ -32,7 +32,7 @@ const Title = () => {
           />
           <button
             onClick={() =>
-              dispatch({ type: 'UPDATE_TITLE', payload: newTitleText })
+              dispatch(updateTitle(newTitleText))
             }
           >
             Update title
