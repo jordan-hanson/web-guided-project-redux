@@ -1,5 +1,6 @@
 import React from 'react';
 import {addMember} from "../actions/dragonListActions";
+import {connect} from "react-redux";
 
 class DragonList extends React.Component {
   state = {
@@ -27,7 +28,7 @@ class DragonList extends React.Component {
           onChange={this.handleChanges}
           placeholder="Add new member"
         />
-        <button onClick={() => this.props.addMember(newMember)}>Add member</button>
+        <button onClick={() => this.props.addMember(this.state.newMember)}>Add member</button>
       </React.Fragment>
     );
   }
