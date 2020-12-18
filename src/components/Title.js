@@ -42,4 +42,14 @@ const Title = () => {
   );
 };
 
+// Step 3: connect the component to the Redux store
+
+const mapStateToProps = () => {
+
+}
+
+const mapDispatchToProps = () => {
+  
+}
+
 export default Title;
