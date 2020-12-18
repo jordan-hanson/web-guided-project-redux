@@ -4,7 +4,7 @@ import {connect} from "react-redux";
 import { initialState, titleReducer } from '../reducers/titleReducer';
 import {updateTitle, toggleEditing} from "../actions/titleActions";
 
-const Title = () => {
+const Title = (props) => {
   const [newTitleText, setNewTitleText] = useState();
   const [state, dispatch] = useReducer(titleReducer, initialState);
 
