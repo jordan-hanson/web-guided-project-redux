@@ -50,12 +50,14 @@ const mapStateToProps = (state) => {
   }
 }
 
-// This is how we update state in the store (with reducer actions)
+// This is how we update state in the store (with reducer actions) -- long form version:
 const mapDispatchToProps = (dispatch) => {
   return {
     updateTitle: (newTitle) => dispatch(updateTitle(newTitle)),
     toggleEditing: () => dispatch(toggleEditing())
   }
 }
+
+// Short form version: mapDispatchToProps = {updateTitle, toggleEditing}
 
 export default connect(mapStateToProps, mapDispatchToProps)(Title);
